@@ -1,2 +1,8 @@
-const hello = "Hello World";
-console.log(hello);
+import app from "./app";
+
+const main = async () => {
+  await app.listen(4000);
+  console.log("Server on port 4000");
+};
+
+main();
